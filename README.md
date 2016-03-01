@@ -50,3 +50,8 @@ Inspired by
 - posh-git
 - posh-npm
 - oh-my-zsh <3
+
+
+License
+--------
+Microsoft Public License https://opensource.org/licenses/MS-PL
