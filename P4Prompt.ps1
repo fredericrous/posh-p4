@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
   perforce prompt for windows powershell
 .DESCRIPTION
@@ -122,7 +122,7 @@ function Write-P4Prompt() {
     return
   }
 
-  if (($depotLocation -ne "") -and ($depotLocation -ne "!")) {
+  if ($depotLocation -ne "!") {
     #changed files:
     $promptStatus = pendingStatus
   
