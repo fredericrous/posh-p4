@@ -17,7 +17,7 @@ Perforce PowerShell integration. Prompt info and command line autocompletion
 Usage
 -----
 
-See `profile.example.ps1` as to how you can integrate the tab completion and/or git prompt into your own profile.
+Tab completion should work out of the box. To configure the prompt, see file `profile.example.ps1` as an example. Basically the function that writes p4 status prompt is `Write-P4Prompt`
 
 If prompt shows a ! instead of the depot tree, it means you have too many views sync to the same folder. Script is limited to 1.
 It could also mean your are not connected to perforce. try command `p4 where ...`
