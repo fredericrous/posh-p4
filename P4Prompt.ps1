@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
   perforce prompt for windows powershell
 .DESCRIPTION
@@ -61,6 +61,8 @@ function getDepotLocation() {
      return getDepotLocation
     }
   } elseif ($mapInfo -like "*is not under client`'s root*") {
+    return ""
+  } elseif ($mapInfo -like "*unknown - use 'client' command to create it.*") {
     return ""
   } elseif ($mapInfo -NotLike "//*" -or (($mapInfo | measure-object -line).lines -gt 1)) {
     $depotLocation = "!"
