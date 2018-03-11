@@ -19,15 +19,11 @@ Usage
 
 See `profile.example.ps1` as to how you can integrate the tab completion and/or git prompt into your own profile.
 
-
 If prompt shows a ! instead of the depot tree, it means you have too many views sync to the same folder. Script is limited to 1.
-
 It could also mean your are not connected to perforce. try command `p4 where ...`
 
-
-Note on performance: If you navigate at the root of a large repo, prompt will be slow.
-
-posh-p4 uses `p4 status ...` to know which are files to add or to delete.. there might be other commands that are faster
+_Note on performance: If you navigate at the root of a large repo, prompt will be slow._
+_posh-p4 uses `p4 status ...` to know which are files to add or to delete.. there might be other commands that are faster_
 
 
 Installing via OneGet
